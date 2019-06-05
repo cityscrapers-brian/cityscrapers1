@@ -22,25 +22,27 @@ parsed_items = [item for item in spider.parse(test_response)]
 freezer.stop()
 
 
-def test_tests():
-    print("Please write some tests for this spider or at least disable this one.")
-    assert False
+#def test_tests():
+#    print("Please write some tests for this spider or at least disable this one.")
+#    assert False
 
 
 """
 Uncomment below
 """
 
-# def test_title():
-#     assert parsed_items[0]["title"] == "EXPECTED TITLE"
+def test_title():
+#     print ("L35: title is |" + str(parsed_items[0]["title"]) + "|")
+     assert parsed_items[0]["title"] == "Allegheny County Board of Health May 1, 2019 12:30 pm"
 
 
 # def test_description():
 #     assert parsed_items[0]["description"] == "EXPECTED DESCRIPTION"
 
 
-# def test_start():
-#     assert parsed_items[0]["start"] == datetime(2019, 1, 1, 0, 0)
+def test_start():
+#    print("L44: start is |" + str(parsed_items[0]["start"]) + "|")
+    assert parsed_items[0]["start"] == datetime(2019, 5, 1, 12, 30)
 
 
 # def test_end():
