@@ -5,7 +5,7 @@ attrs==19.1.0
 automat==0.7.0
 boto3==1.9.130
 botocore==1.12.130
-certifi==2019.3.9
+certifi==2022.12.7
 cffi==1.12.2
 chardet==3.0.4
 city-scrapers-core[aws]==0.2.5
